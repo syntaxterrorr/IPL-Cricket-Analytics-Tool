@@ -1,0 +1,146 @@
+{% load bootstrap %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bowling Team</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="4th Umpire Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+	<style>
+		::-webkit-scrollbar {
+	    display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner-1 jarallax" id="home">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="{% url 'main2' %}">Game Maker</a></h1>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="about">
+		<div class="container">
+			<div class="wthree_head_section">
+				<h3 class="w3l_header">GAME <span>MAKER</span></h3>
+			</div>
+			<div class="ab-agile">
+      	<div style="padding: 0 0px;">
+        	<form action="" method="post" style="display: inline">
+						<label style="float:right" class="switch">
+							<input name="toggle" value="1" type="checkbox" checked>
+							<span class="slider1 round"></span>
+						</label>
+						<div style="float:right;margin-right:80px">
+						<h4>Batsman</h4>
+						{{batsman}}
+						<br>
+						<br>
+						<h4>Bowlers</h4>
+						{% for i in print %}
+						{{i}}
+						<br>
+						{% endfor %}
+          	{% csrf_token %}
+						</div>
+            <div>
+            	{{form2|bootstrap}}
+							<input type="text" style="display:inline;margin-left:15px;" placeholder="Batsman on Strike" name="bos">
+            </div>
+						<div style="margin-bottom:10px;display:inline-block;width: 270px;">
+							<input type="text" name="p1" value="PA Patel"><br>
+							<input type="text" name="p2" value="JC Buttler"><br>
+							<input type="text" name="p3" value="RG Sharma"><br>
+							<input type="text" name="p4" value="N Rana"><br>
+							<input type="text" name="p5" value="KA Pollard"><br>
+							<input type="text" name="p6" value="AT Rayudu"><br>
+							<input type="text" name="p7" value="KH Pandya"><br>
+							<input type="text" name="p8" value="HH Pandya"><br>
+							<input type="text" name="p9" value="Harbhajan Singh"><br>
+							<input type="text" name="p10" value="MJ McClenaghan"><br>
+							<input type="text" name="p11" value="JJ Bumrah"><br>
+						</div>
+						<div style="margin-bottom:10px;display:inline-block;width: 270px;">
+							<input type="text" name="p12" value="CH Gayle"><br>
+							<input type="text" name="p13" value="V Kohli"><br>
+							<input type="text" name="p14" value="Mandeep Singh"><br>
+							<input type="text" name="p15" value="AB de Villiers"><br>
+							<input type="text" name="p16" value="KM Jadhav"><br>
+							<input type="text" name="p17" value="TM Head"><br>
+							<input type="text" name="p18" value="STR Binny"><br>
+							<input type="text" name="p19" value="S Badree"><br>
+							<input type="text" name="p20" value="TS Mills"><br>
+							<input type="text" name="p21" value="YS Chahal"><br>
+							<input type="text" name="p22" value="S Arvind"><br>
+						</div>
+            <input class="btn btn-success btn-block" style="width:20%;" type="submit" value="PREDICT THE RESULT" />
+          </form>
+      	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wthree-mid jarallax">
+		<div class="container">
+			<h3>IPL Chases</h3>
+			<p>IPL has always been full of very close encounters and nail biting last ball finshers and super overs.
+			The highest total ever chased is 217 runs.</p>
+		</div>
+	</div>
+
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type='text/javascript' src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

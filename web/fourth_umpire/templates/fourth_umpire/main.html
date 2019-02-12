@@ -1,0 +1,341 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Game Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" property="" />
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet" />
+
+	<style>
+	.col-container {
+		display: table;
+		width: 100%;
+	}
+	.xyz{
+  		display: block;
+	}
+	.col {
+		display: table-cell;
+	}
+	::-webkit-scrollbar {
+    display: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="banner jarallax" id="home">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="{% url 'main2' %}">Game Maker</a></h1>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="banner-text-w3-agileits">
+										<h5>IPL 2018 </h5>
+										<h2>Enjoy Prediction Services</h2>
+										<p>based on machine learning and AI.</p>
+										<div class="botton">
+											<a href='#serve'>Start Predicting Now</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="banner-text-w3-agileits">
+										<h5>Using State of Art Algorithms </h5>
+										<h2>Know the score and result before the starting of the match</h2>
+										<p>Make near-accurate predictions of your favourite team's performance</p>
+										<div class="botton">
+											<a href='#serve'>Start Predicting Now</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="practice-areas">
+		<div class="container">
+			<div class="wthree_head_section">
+				<a id='serve'><h3 class="w3l_header">Our <span>RESULTS</span></h3>
+				<p>We are here for computing all sorts of results that you want to predict before and during the match</p>
+			</div>
+			<div class="container">
+				<!-- <div class="col area-right p2">
+		  		<a class ="xyz" href={% url 'first_inn' %}><h5>Batting Team</h5></a>
+	  			<p class="para-w3-agile">Use our very advanced Machine Learning Technology to predict how much the batting team will score at the end of their innings given a few details of the match's current scenario.</p>
+	  		</div> -->
+	 			<div class="col area-right p3">
+		   		<a class ="xyz" href={% url 'second_inn' %}><h5>SEE RESULTS</h5></a>
+	  	 		<p class="para-w3-agile">We present to you a very sophisticated Machine Learning Technology which predicts how the chasing team will perform at the end of their innings given a few details of the 2nd inning's current scenario.</p>
+	  		</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wthree-mid jarallax">
+		<div class="container">
+			<h3>Indian Premier League</h3>
+			<p>The Indian Premier League is one of the most anticipated and interesting cricket tournaments in the world.</p>
+			<div class="botton">
+				<a href="http://www.iplt20.com/" target="_blank">Visit IPL's Ofiicial Website</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3ls-section wthree-pricing" id="pricing">
+		<div class="container">
+			<div class="wthree_head_section">
+				<h3 class="w3l_header">IPL <span>Battlefield</span></h3>
+				<p>The Indian Premier League is no less than a battlefield where each each army is their claim their victory. Here, we list the eight teams with some of their star players that will compete in this year's IPL Edition.</p>
+			</div>
+			<div class="pricing-grids-info">
+				<div class="pricing-grid grid-one">
+					<div class="w3ls-top">
+						<h3>Mumbai Indians</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Rohit Sharma (c)</li>
+							<li>Kieron Pollard</li>
+							<li>Hardik Pandya</li>
+							<li>J.P Duminy</li>
+							<li>Mustafizur Rehman</li>
+							<li>Pat Cummins</li>
+						</ul>
+						<div class="more">
+							<a href="http://www.mumbaiindians.com/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="pricing-grid grid-two">
+					<div class="w3ls-top">
+						<h3>Rajasthan Royals</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Steve Smith (c)</li>
+							<li>Ben Stokes</li>
+							<li>Ajinkya Rahane</li>
+							<li>Jos Buttler</li>
+							<li>Sanju Samson</li>
+							<li>Stuart Binny</li>
+						</ul>
+						<div class="more">
+							<a href="https://www.rajasthanroyals.com/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="zb pricing-grid grid-three">
+					<div class="w3ls-top">
+						<h3>Delhi Daredevils</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Gautam Gambhir (c)</li>
+							<li>Jason Roy</li>
+							<li>Glenn Maxwell</li>
+							<li>Chris Morris</li>
+							<li>Trent Boult</li>
+							<li>Kagiso Rabada</li>
+						</ul>
+						<div class="more">
+							<a href="http://www.delhidaredevils.com/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="zb pricing-grid grid-four">
+					<div class="w3ls-top">
+						<h3>Kings XI Punjab</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Ravinchandran Ashwin (c)</li>
+							<li>Chris Gayle</li>
+							<li>David Miller</li>
+							<li>Yuvraj Singh</li>
+							<li>Aaron Finch</li>
+							<li>Manoj Tiwary</li>
+						</ul>
+						<div class="more">
+							<a href="https://www.kxip.in/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3ls-section wthree-pricing" id="pricing">
+		<div class="container">
+			<div class="pricing-grids-info">
+				<div class="pricing-grid grid-one">
+					<div class="w3ls-top">
+						<h3>Chennai Super Kings</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>M.S. Dhoni (c)</li>
+							<li>Imran Tahir</li>
+							<li>Dwayne Bravo</li>
+							<li>Suresh Raina</li>
+							<li>Shane Watson</li>
+							<li>Faf du Plessis</li>
+						</ul>
+						<div class="more">
+							<a href="https://www.chennaisuperkings.com/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="pricing-grid grid-two">
+					<div class="w3ls-top">
+						<h3>Kolkata Knight Riders</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Dinesh Karthik (c)</li>
+							<li>Mitchell Starc</li>
+							<li>Robin Uthappa</li>
+							<li>Sunil Narine</li>
+							<li>Andre Russel</li>
+							<li>Mitchell Johnson</li>
+						</ul>
+						<div class="more">
+							<a href="http://www.kkr.in/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="pricing-grid grid-three">
+					<div class="w3ls-top">
+						<h3>Sunrisers Hyderabad</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>David Warner (c)</li>
+							<li>Shikhar Dhawan</li>
+							<li>Shakib Al Hasan</li>
+							<li>Bhuvneshwar Kumar</li>
+							<li>Kane Williamson</li>
+							<li>Yusuf Pathan</li>
+						</ul>
+						<div class="more">
+							<a href="http://www.sunrisershyderabad.in/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="pricing-grid grid-four">
+					<div class="w3ls-top">
+						<h3>Royal Challengers Bangalore</h3>
+					</div>
+					<div class="w3ls-bottom">
+						<ul class="count">
+							<li>Virat Kohli (c)</li>
+							<li>A.B de Villiers</li>
+							<li>Brendon McCullum</li>
+							<li>Tim Southee</li>
+							<li>Quinton de Kock</li>
+						</ul>
+						<div class="more">
+							<a href="https://www.royalchallengers.com/" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	<script type='text/javascript' src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		$('.jarallax').jarallax({
+			speed: 0.3,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 2,
+				lazyLoad: true,
+				autoPlay: false,
+				pagination: true,
+			});
+		});
+	</script>
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'js/jquery.countup.js' %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>

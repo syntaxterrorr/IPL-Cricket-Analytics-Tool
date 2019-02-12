@@ -1,0 +1,127 @@
+{% load bootstrap %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Batting Team</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="4th Umpire Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+	<style>
+		::-webkit-scrollbar {
+	    display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner-1 jarallax" id="home">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="{% url 'main2' %}">Cricket Predictor</a></h1>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="about">
+		<div class="container">
+			
+			<!--<div class="wthree_head_section">
+				<h3 class="w3l_header">TARGET <span>PREDICTOR</span></h3>
+			</div>
+			<div class="ab-agile">
+  			<div style="padding: 0 0px;">
+  				<form action="" method="post">
+	      		{% csrf_token %}
+	    			<div>
+	        		{{form1|bootstrap}}
+	        	</div>
+						<div style="margin-bottom:10px;display:inline-block;width: 270px;">
+							<input type="text" value="PA Patel"><br>
+							<input type="text" value="JC Buttler"><br>
+							<input type="text" value="RG Sharma"><br>
+							<input type="text" value="N Rana"><br>
+							<input type="text" value="KA Pollard"><br>
+							<input type="text" value="AT Rayudu"><br>
+							<input type="text" value="KH Pandya"><br>
+							<input type="text" value="HH Pandya"><br>
+							<input type="text" value="Harbhajan Singh"><br>
+							<input type="text" value="MJ McClenaghan"><br>
+							<input type="text" value="JJ Bumrah"><br>
+						</div>
+						<div style="margin-bottom:10px;display:inline-block">
+							<input type="text" value="CH Gayle"><br>
+							<input type="text" value="V Kohli"><br>
+							<input type="text" value="Mandeep Singh"><br>
+							<input type="text" value="AB de Villiers"><br>
+							<input type="text" value="KM Jadhav"><br>
+							<input type="text" value="TM Head"><br>
+							<input type="text" value="STR Binny"><br>
+							<input type="text" value="S Badree"><br>
+							<input type="text" value="TS Mills"><br>
+							<input type="text" value="YS Chahal"><br>
+							<input type="text" value="S Arvind"><br>
+						</div>
+      			<input class="btn btn-success btn-block" style="width:20%;" type="submit" value="PREDICT THE RESULT" />
+  				</form>
+					<br>
+	     	</div>
+			</div> -->
+		</div>
+	</div>
+	<div class="wthree-mid jarallax">
+		<div class="container">
+			<h3>FIRST INNINGS PREDICTIONS</h3>
+			<p>The technique that we use is very sophisticated and involves the use of the current scenario of the match to get predictions and not what is shown on Live Streams which use Normal Maths using current run rate</p>
+		</div>
+	</div>
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type='text/javascript' src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
