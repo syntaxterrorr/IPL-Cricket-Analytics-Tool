@@ -1,4 +1,4 @@
-# Cricket-Predictor
+# IPL Cricket Analytics Tool
 
 An analytics tool that helps decide bowler selection with respect to particular batsmen, and also helps batsmen select specific bowlers to target.
 
